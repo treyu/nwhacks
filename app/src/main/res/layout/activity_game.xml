@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="nwhacks.tree_tapper.GameActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/score"
+            android:text="@string/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:stretchColumns="1">
+            <TableRow>
+                <ImageView android:id="@+id/top_left_button"
+                    android:src="@drawable/car"
+                    android:tag="car"
+                    android:onClick="ComputeScore"
+                    />
+                <ImageView android:id="@+id/top_middle_button"
+                    android:src="@drawable/tree"
+                    android:tag="tree"
+                    android:onClick="ComputeScore"
+                    />
+                <ImageView android:id="@+id/top_right_button"
+                    android:src="@drawable/car"
+                    android:tag="car"
+                    android:onClick="ComputeScore"
+                    />
+            </TableRow>
+            <TableRow>
+                <ImageView android:id="@+id/mid_left_button"
+                    android:src="@drawable/tree"
+                    android:tag="tree"
+                    android:onClick="ComputeScore"
+                    />
+                <ImageView android:id="@+id/mid_middle_button"
+                    android:src="@drawable/car"
+                    android:tag="car"
+                    android:onClick="ComputeScore"
+                    />
+                <ImageView android:id="@+id/mid_right_button"
+                    android:src="@drawable/tree"
+                    android:tag="tree"
+                    android:onClick="ComputeScore"
+                    />
+            </TableRow>
+            <TableRow>
+                <ImageView android:id="@+id/bot_left_button"
+                    android:src="@drawable/car"
+                    android:tag="car"
+                    android:onClick="ComputeScore"
+                    />
+                <ImageView android:id="@+id/bot_middle_button"
+                    android:src="@drawable/tree"
+                    android:tag="tree"
+                    android:onClick="ComputeScore"
+                    />
+                <ImageView android:id="@+id/bot_right_button"
+                    android:src="@drawable/car"
+                    android:tag="car"
+                    android:onClick="ComputeScore"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"/>
+</RelativeLayout>
